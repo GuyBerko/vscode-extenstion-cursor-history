@@ -10,7 +10,6 @@ This is an extension for going forward and backwards in the cursor placement his
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
