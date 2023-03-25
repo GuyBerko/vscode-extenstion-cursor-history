@@ -2,7 +2,7 @@
   "name": "cursorhistory",
   "displayName": "CursorHistory",
   "description": "Extension for going forward and backwards in the cursor placement history",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icon": "images/logo.png",
   "author": {
     "name": "Guy Berkovich",
