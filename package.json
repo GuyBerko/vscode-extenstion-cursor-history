@@ -1,6 +1,6 @@
 {
   "name": "cursorhistory",
-  "displayName": "CursorHistory",
+  "displayName": "Cursor History",
   "description": "Extension for going forward and backwards in the cursor placement history",
   "version": "1.0.2",
   "icon": "images/logo.png",
@@ -53,11 +53,11 @@
     "commands": [
       {
         "command": "cursorhistory.forward",
-        "title": "Go Forward"
+        "title": "Cursor History: Go Forward"
       },
       {
         "command": "cursorhistory.backward",
-        "title": "Go Backward"
+        "title": "Cursor History: Go Backward"
       }
     ],
     "keybindings": [
