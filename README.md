@@ -8,15 +8,6 @@
 This is an extension for going forward and backwards in the cursor placement history
 
 
-
-
-
-## Features
-
-TODO: add video
-
-
-
 ## Release Notes
 
 Users appreciate release notes as you update your extension.
