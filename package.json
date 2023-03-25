@@ -1,0 +1,96 @@
+{
+  "name": "cursorhistory",
+  "displayName": "CursorHistory",
+  "description": "Extension for going forward and backwards in the cursor placement history",
+  "version": "0.0.1",
+  "author": {
+    "name": "Guy Berkovich",
+    "email": "mailofguy@gmail.com",
+    "url": "https://github.com/GuyBerko"
+  },
+  "publisher": "GuyBerko",
+  "license": "SEE LICENSE IN LICENSE",
+  "badges": [
+    {
+      "url": "https://img.shields.io/badge/License-MIT-brightgreen.svg",
+      "description": "License: MIT",
+      "href": "https://github.com/GuyBerko/vscode-extenstion-cursor-history/blob/main/LICENSE"
+    },
+    {
+      "url": "https://img.shields.io/badge/PRs-welcome-brightgreen.svg",
+      "description": "PRs Welcome",
+      "href": "https://github.com/GuyBerko/vscode-extenstion-cursor-history"
+    }
+  ],
+  "homepage": "https://github.com/GuyBerko/vscode-extenstion-cursor-history/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/GuyBerko/vscode-extenstion-cursor-history/issues",
+    "email": "mailofguy@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuyBerko/vscode-extenstion-cursor-history"
+  },
+  "engines": {
+    "vscode": "^1.76.2",
+    "node": "^18.15.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "vscode",
+    "vscode-extension",
+    "vscode-extension-cursor-history",
+    "cursor-history"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursorhistory.forward",
+        "title": "Go Forward"
+      },
+      {
+        "command": "cursorhistory.backward",
+        "title": "Go Backward"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "cursorhistory.forward",
+        "key": "ctrl+alt+right",
+        "mac": "ctrl+cmd+right"
+      },
+      {
+        "command": "cursorhistory.backward",
+        "key": "ctrl+alt+left",
+        "mac": "ctrl+cmd+left"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.76.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.34.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.5",
+    "@vscode/test-electron": "^2.2.3"
+  }
+}
