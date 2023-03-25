@@ -1,7 +1,7 @@
 # CursorHistory 
 
 [![GitHub](https://img.shields.io/github/license/GuyBerko/vscode-extenstion-cursor-history?style=flat)](https://github.com/GuyBerko/vscode-extenstion-cursor-history/blob/main/LICENSE) 
-[![Known Vulnerabilities](https://snyk.io/test/github/GuyBerko/vscode-extenstion-cursor-history/badge.svg?targetFile=package.json?style=plastic)](https://snyk.io/test/github/GuyBerko/vscode-extenstion-cursor-history?targetFile=package.json) 
+[![Known Vulnerabilities](https://snyk.io/test/github/GuyBerko/vscode-extenstion-cursor-history/badge.svg)](https://snyk.io/test/github/GuyBerko/vscode-extenstion-cursor-history)
 [![Percentage of issues still open](https://isitmaintained.com/badge/open/GuyBerko/vscode-extenstion-cursor-history.svg)](http://isitmaintained.com/project/GuyBerko/vscode-extenstion-cursor-history') 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
