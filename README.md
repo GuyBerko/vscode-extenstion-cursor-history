@@ -1,26 +1,21 @@
 # CursorHistory 
 
+[![GitHub](https://img.shields.io/github/license/GuyBerko/vscode-extenstion-cursor-history?style=flat)](https://github.com/GuyBerko/vscode-extenstion-cursor-history/blob/main/LICENSE) 
+[![Known Vulnerabilities](https://snyk.io/test/github/GuyBerko/vscode-extenstion-cursor-history/badge.svg?targetFile=package.json?style=plastic)](https://snyk.io/test/github/GuyBerko/vscode-extenstion-cursor-history?targetFile=package.json) 
+[![Percentage of issues still open](https://isitmaintained.com/badge/open/GuyBerko/vscode-extenstion-cursor-history.svg)](http://isitmaintained.com/project/GuyBerko/vscode-extenstion-cursor-history') 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
 This is an extension for going forward and backwards in the cursor placement history
+
+
+
+
 
 ## Features
 
 TODO: add video
 
-## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
 ## Release Notes
 
@@ -28,35 +23,21 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release of Cursor History
 
-### 1.0.1
 
-Fixed issue #.
+## How to use
 
-### 1.1.0
+### Keyboard:
+* Press `ctrl+cmd+right` (macOS) or `ctrl+alt+right` (Windows) to go forward in the cursor history.
+* Press `ctrl+cmd+left` (macOS) or `ctrl+alt+left` (Windows) to go backwards in the cursor history.
 
-Added features X, Y, and Z.
+### Action Buttons:
+* Click `»` button in the bottom left tool bar to go forward in the cursor history.
+* Click `«` button in the bottom left tool bar to go backwards in the cursor history.
 
----
+When you will reach the start or end of history a notification message will popup to inform you.
 
-## Following extension guidelines
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
