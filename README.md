@@ -19,6 +19,14 @@ Initial release of Cursor History
 
 Add know issue on mac with sound playing when pressing the default keyboard shortcut
 
+### 1.1.0
+
+Add more error handlers and comments
+
+### 1.1.1
+
+Remove redundant .md file
+
 
 ## How to use
 
