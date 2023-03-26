@@ -11,9 +11,21 @@ This is an extension for going forward and backwards in the cursor placement his
 ## Release Notes
 
 
-### 1.0.0
+### 1.0.0 - 1.0.4
 
 Initial release of Cursor History
+
+### 1.0.5
+
+Add know issue on mac with sound playing when pressing the default keyboard shortcut
+
+### 1.1.0
+
+Add more error handlers and comments
+
+### 1.1.1
+
+Remove redundant .md file
 
 
 ## How to use
@@ -28,6 +40,11 @@ Initial release of Cursor History
 
 When you will reach the start or end of history a notification message will popup to inform you.
 
+
+## Known issues:
+- On mac when using the default key binding there could be a sound from the computer this is a known issue in vscode 
+(as reported here: https://github.com/microsoft/vscode/issues/46149 and here https://github.com/microsoft/vscode/issues/153061) and probably will not be resolved. 
+our suggestion is to change the default key binding to some thing else like `cmd+right` and `cmd+left`.
 
 
 **Enjoy!**
