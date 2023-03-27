@@ -7,6 +7,7 @@
 
 This is an extension for going forward and backwards in the cursor placement history
 
+![Example](https://github.com/GuyBerko/vscode-extenstion-cursor-history/blob/main/images/cursor-history-example.gif)
 
 ## Release Notes
 
