@@ -9,6 +9,24 @@ This is an extension for going forward and backwards in the cursor placement his
 
 ![Example](https://github.com/GuyBerko/vscode-extenstion-cursor-history/blob/main/images/cursor-history-example.gif)
 
+## How to use
+
+### Keyboard:
+* Press `ctrl+cmd+right` (macOS) or `ctrl+alt+right` (Windows) to go forward in the cursor history.
+* Press `ctrl+cmd+left` (macOS) or `ctrl+alt+left` (Windows) to go backwards in the cursor history.
+
+### Action Buttons:
+* Click `»` button in the bottom left tool bar to go forward in the cursor history.
+* Click `«` button in the bottom left tool bar to go backwards in the cursor history.
+
+When you will reach the start or end of history a notification message will popup to inform you.
+
+
+## Known issues:
+- On mac when using the default key binding there could be a sound from the computer this is a known issue in vscode 
+(as reported here: https://github.com/microsoft/vscode/issues/46149 and here https://github.com/microsoft/vscode/issues/153061) and probably will not be resolved. 
+our suggestion is to change the default key binding to some thing else like `cmd+right` and `cmd+left`.
+
 ## Release Notes
 
 
@@ -28,24 +46,14 @@ Add more error handlers and comments
 
 Remove redundant .md file
 
+### 1.1.2 - 1.1.3
 
-## How to use
+Add example gif to readme
 
-### Keyboard:
-* Press `ctrl+cmd+right` (macOS) or `ctrl+alt+right` (Windows) to go forward in the cursor history.
-* Press `ctrl+cmd+left` (macOS) or `ctrl+alt+left` (Windows) to go backwards in the cursor history.
+### 1.1.4
 
-### Action Buttons:
-* Click `»` button in the bottom left tool bar to go forward in the cursor history.
-* Click `«` button in the bottom left tool bar to go backwards in the cursor history.
+Fix issue when selection cause duplicate history
 
-When you will reach the start or end of history a notification message will popup to inform you.
-
-
-## Known issues:
-- On mac when using the default key binding there could be a sound from the computer this is a known issue in vscode 
-(as reported here: https://github.com/microsoft/vscode/issues/46149 and here https://github.com/microsoft/vscode/issues/153061) and probably will not be resolved. 
-our suggestion is to change the default key binding to some thing else like `cmd+right` and `cmd+left`.
 
 
 **Enjoy!**
