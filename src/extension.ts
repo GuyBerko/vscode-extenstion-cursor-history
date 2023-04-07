@@ -53,6 +53,12 @@ const moveCursor = async (currentEditor: vscode.TextEditor, newPosition: History
   }
 };
 
+const checkIfIsSelection = (selection: vscode.Selection): boolean => {
+  const start = selection.start;
+  const end = selection.end;
+  return start.character !== end.character || start.line !== end.line;
+};
+
 const onCursorPositionChange = () => {
   try {
     const { activeTextEditor: editor } = vscode.window;
@@ -67,9 +73,14 @@ const onCursorPositionChange = () => {
       return;
     }
 
-    const newPos = editor.selection.active;
+    const isSelection = checkIfIsSelection(editor.selection);
 
-    if (!newPos) {
+    const newPos = isSelection ? editor.selection.start : editor.selection.active;
+
+    const previousPos = history[posIndex]?.position;
+
+    // If there is no new position (glitch) or the new position is the same as the previous one (selection), then stopping.
+    if (!newPos || (newPos.character === previousPos?.character && newPos.line === previousPos?.line)) {
       return;
     }
 

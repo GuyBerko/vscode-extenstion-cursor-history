@@ -49,6 +49,9 @@
     "onStartupFinished"
   ],
   "main": "./out/extension.js",
+  "vsce": {
+    "baseImagesUrl": "https://github.com/GuyBerko/vscode-extenstion-cursor-history/blob/main/images"
+  },
   "contributes": {
     "commands": [
       {
