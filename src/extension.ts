@@ -77,10 +77,22 @@ const onCursorPositionChange = () => {
 
     const newPos = isSelection ? editor.selection.start : editor.selection.active;
 
+    if (!newPos) {
+      return;
+    }
+
     const previousPos = history[posIndex]?.position;
 
     // If there is no new position (glitch) or the new position is the same as the previous one (selection), then stopping.
-    if (!newPos || (newPos.character === previousPos?.character && newPos.line === previousPos?.line)) {
+    if (newPos.character === previousPos?.character && newPos.line === previousPos?.line) {
+      return;
+    }
+
+    // check the length of difference between last pos to new one
+    const newPosColDiff = Math.abs(previousPos.character - newPos.character);
+    const newPosRowDiff = Math.abs(previousPos.line - newPos.line);
+
+    if (newPosColDiff < 80 && newPosRowDiff < 4) {
       return;
     }
 
