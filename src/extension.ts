@@ -89,10 +89,10 @@ const onCursorPositionChange = () => {
     }
 
     // check the length of difference between last pos to new one
-    const newPosColDiff = Math.abs(previousPos.character - newPos.character);
-    const newPosRowDiff = Math.abs(previousPos.line - newPos.line);
+    const newPosColDiff = Math.abs(previousPos?.character - newPos.character);
+    const newPosRowDiff = Math.abs(previousPos?.line - newPos.line);
 
-    if (newPosColDiff < 80 && newPosRowDiff < 4) {
+    if (previousPos && newPosColDiff < 80 && newPosRowDiff < 4) {
       return;
     }
 

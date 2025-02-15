@@ -23,3 +23,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### 1.2.0
 
 - Add feature to ignore new positions that are too close to previous position
+
+### 1.2.1
+
+- Fix a bug where cursor history is empty
